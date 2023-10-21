@@ -10,7 +10,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Slf4j
-public class PlayerInfoCustomProcessor implements ItemProcessor<PlayerInfoMetadataDto, PlayerInfo> {
+public class PlayerInfoCustomItemProcessor implements ItemProcessor<PlayerInfoMetadataDto, PlayerInfo> {
+
     @Override
     public PlayerInfo process(PlayerInfoMetadataDto item) throws Exception {
         log.info("Processing {}", item);
